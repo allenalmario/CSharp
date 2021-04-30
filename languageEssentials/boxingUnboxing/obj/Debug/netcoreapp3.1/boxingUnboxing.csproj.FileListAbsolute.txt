@@ -1,0 +1,13 @@
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\boxingUnboxing\bin\Debug\netcoreapp3.1\boxingUnboxing.exe
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\boxingUnboxing\bin\Debug\netcoreapp3.1\boxingUnboxing.deps.json
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\boxingUnboxing\bin\Debug\netcoreapp3.1\boxingUnboxing.runtimeconfig.json
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\boxingUnboxing\bin\Debug\netcoreapp3.1\boxingUnboxing.runtimeconfig.dev.json
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\boxingUnboxing\bin\Debug\netcoreapp3.1\boxingUnboxing.dll
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\boxingUnboxing\bin\Debug\netcoreapp3.1\boxingUnboxing.pdb
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\boxingUnboxing\obj\Debug\netcoreapp3.1\boxingUnboxing.csprojAssemblyReference.cache
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\boxingUnboxing\obj\Debug\netcoreapp3.1\boxingUnboxing.AssemblyInfoInputs.cache
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\boxingUnboxing\obj\Debug\netcoreapp3.1\boxingUnboxing.AssemblyInfo.cs
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\boxingUnboxing\obj\Debug\netcoreapp3.1\boxingUnboxing.csproj.CoreCompileInputs.cache
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\boxingUnboxing\obj\Debug\netcoreapp3.1\boxingUnboxing.dll
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\boxingUnboxing\obj\Debug\netcoreapp3.1\boxingUnboxing.pdb
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\boxingUnboxing\obj\Debug\netcoreapp3.1\boxingUnboxing.genruntimeconfig.cache

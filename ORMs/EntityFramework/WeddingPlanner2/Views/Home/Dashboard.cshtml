@@ -1,0 +1,62 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+@model List<Wedding>
+
+<div class="text-center">
+    <h1 class="d-flex justify-content-between">Welcome To Wedding Planner</h1>
+    <form asp-action="Logout" asp-controller="Home" Method="POST">
+        <button type="submit" class="btn btn-link">Logout</button>
+    </form>
+    <hr>
+</div>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">Wedding</th>
+            <th scope="col">Date</th>
+            <th scope="col">Guest</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Wedding w in Model)
+        {
+            @* Check to see if user in session is in this weddings Attendees list *@
+            bool alreadyRSVPD = w.Attendees.Any(u => u.UserId == Context.Session.GetInt32("LoggedUserId"));
+            <tr>
+                <th scope="row"><a asp-action="OneWedding" asp-controller="Home"
+                    asp-route-weddingid=@w.WeddingId>@w.WedderOne & @w.WedderTwo</a></th>
+                <td>@w.Date.ToString("MMM dd, yyyy")</td>
+                <td>@w.Attendees.Count</td>
+                @if (w.UserId == Context.Session.GetInt32("LoggedUserId"))
+                {
+                    <td>
+                    <form asp-action="Delete" asp-controller="Home" asp-route-weddingid=@w.WeddingId method="POST">
+                        <button type="submit" class="btn btn-link">Delete</button>
+                    </form>
+                    </td>
+                }
+                else
+                {
+                    <td>
+                        <form asp-action="RSVP" asp-controller="Home" asp-route-weddingid=@w.WeddingId Method="POST">
+                            <button class="btn btn-link">
+                                @if (alreadyRSVPD)
+                                {
+                                    <span>Un-RSVP</span>
+                                }
+                                else
+                                {
+                                    <span>RSVP</span>
+                                }
+                            </button>
+                        </form>
+                    </td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>

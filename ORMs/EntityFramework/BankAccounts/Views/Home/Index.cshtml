@@ -1,0 +1,49 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    @model Transaction
+
+    <div class="text-center">
+        <h1 class="display-4">Bank Account</h1>
+        <form asp-action="Logout" asp-controller="Home" method="Post">
+            <button type="submit">Logout</button>
+        </form>
+        <h3>Welcome, @ViewBag.User.FirstName @ViewBag.User.LastName</h3>
+        <p>Your current balance: $@ViewBag.User.CurrentBalance.00</p>
+        <form asp-action="Transaction" asp-controller="Home" asp-route-userid=@ViewBag.User.UserId method="Post">
+            <span asp-validation-for="Amount"></span>
+            <label asp-for="Amount">Deposit/Withdraw</label>
+            <input type="number" asp-for="Amount" />
+            <input type="submit" value="Submit" />
+        </form>
+        <table>
+            <tr>
+                <th>Amount</th>
+                <th>Date</th>
+            </tr>
+            @foreach (Transaction t in @ViewBag.Transactions)
+            {
+                <tr>
+                    @if (t.Amount < 0)
+                    {
+                        <td>-$@t.Amount.00</td>
+                    }
+                    else
+                    {
+                        <td>+$@t.Amount.00</td>
+                    }
+                    <td>@t.CreatedAt</td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>
+

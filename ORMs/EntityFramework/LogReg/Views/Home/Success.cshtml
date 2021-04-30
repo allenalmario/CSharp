@@ -1,0 +1,4 @@
+<form asp-action="Logout" asp-controller="Home" method="POST">
+    <button class="btn btn-link">Logout @Context.Session.GetString("UserName")</button>
+</form>
+<h1>Success!</h1>

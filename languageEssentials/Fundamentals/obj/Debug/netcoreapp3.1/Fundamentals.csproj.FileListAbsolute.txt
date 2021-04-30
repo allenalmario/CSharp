@@ -1,0 +1,13 @@
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\Fundamentals\obj\Debug\netcoreapp3.1\Fundamentals.csprojAssemblyReference.cache
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\Fundamentals\obj\Debug\netcoreapp3.1\Fundamentals.AssemblyInfoInputs.cache
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\Fundamentals\obj\Debug\netcoreapp3.1\Fundamentals.AssemblyInfo.cs
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\Fundamentals\obj\Debug\netcoreapp3.1\Fundamentals.csproj.CoreCompileInputs.cache
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\Fundamentals\bin\Debug\netcoreapp3.1\Fundamentals.exe
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\Fundamentals\bin\Debug\netcoreapp3.1\Fundamentals.deps.json
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\Fundamentals\bin\Debug\netcoreapp3.1\Fundamentals.runtimeconfig.json
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\Fundamentals\bin\Debug\netcoreapp3.1\Fundamentals.runtimeconfig.dev.json
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\Fundamentals\bin\Debug\netcoreapp3.1\Fundamentals.dll
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\Fundamentals\bin\Debug\netcoreapp3.1\Fundamentals.pdb
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\Fundamentals\obj\Debug\netcoreapp3.1\Fundamentals.dll
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\Fundamentals\obj\Debug\netcoreapp3.1\Fundamentals.pdb
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\Fundamentals\obj\Debug\netcoreapp3.1\Fundamentals.genruntimeconfig.cache

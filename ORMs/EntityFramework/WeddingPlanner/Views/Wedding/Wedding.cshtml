@@ -1,0 +1,30 @@
+@{
+    ViewData["Title"] = "Wedding";
+}
+
+@model Wedding
+
+<div class="text-center row justify-content-around">
+    <h1>@Model.WedderOne and @Model.WedderTwo's Wedding</h1>
+    <a href="/Dashboard">Dashboard</a>
+    <form asp-action="Logout" asp-controller="Home">
+        <button>Logout</button>
+    </form>
+</div>
+<p>Date: @Model.Date.ToString("MMMM dd, yyyy")</p>
+<p>Guests:</p>
+@foreach (UserWeddingGuest g in Model.Guests)
+{
+    <ul>
+        <li>@g.User.FirstName @g.User.LastName</li>
+    </ul>
+}
+@{
+    if (Model.Creator.UserId == Context.Session.GetInt32("LoggedUserId"))
+    {
+        <a class="btn btn-warning" asp-action="Edit" asp-controller="Wedding" asp-route-weddingid="@Model.WeddingId">Edit</a>
+        <form asp-action="Delete" asp-controller="Wedding" asp-route-weddingid=@Model.WeddingId>
+            <button class="btn btn-danger" type="submit">DELETE</button>
+        </form>
+    }
+}

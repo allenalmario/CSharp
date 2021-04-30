@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model List<Dish>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <div class="d-flex justify-content-between">
+        <p><a href="/chefs">Chefs</a> | <a>Dishes</a></p>
+        <a href="/create_dish">Add a Dish</a>
+    </div>
+    <p>Yum, take a look at our tasty dishes!</p>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Chef</th>
+            <th>Tastiness</th>
+            <th>Calories</th>
+        </tr>
+        @foreach (Dish d in @ViewBag.Dishes)
+        {
+            <tr>
+                <td>@d.Name</td>
+                <td>@d.Creator.FirstName @d.Creator.LastName</td>
+                <td>@d.Tastiness</td>
+                <td>@d.Calories</td>
+            </tr>
+        }
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+</div>

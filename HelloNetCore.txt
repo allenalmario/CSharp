@@ -1,0 +1,19 @@
+3.1.302
+
+04/05/2021  05:29 PM    <DIR>          .
+04/05/2021  05:29 PM    <DIR>          ..
+04/05/2021  05:13 PM    <DIR>          FirstCSharp
+04/05/2021  05:29 PM    <DIR>          HelloNetCore
+               0 File(s)              0 bytes
+               4 Dir(s)  924,400,041,984 bytes free
+
+The template "Console Application" was created successfully.
+
+Processing post-creation actions...
+Running 'dotnet restore' on C:\Users\Allen\Desktop\codingDojo\cSharp\HelloNetCore\HelloNetCore.csproj...
+  Determining projects to restore...
+  Restored C:\Users\Allen\Desktop\codingDojo\cSharp\HelloNetCore\HelloNetCore.csproj (in 90 ms).
+
+Restore succeeded.
+
+Hello World!

@@ -1,0 +1,23 @@
+@{
+    ViewData["Title"] = "Wedding";
+}
+
+@model Wedding
+
+<h1>@Model.WedderOne & @Model.WedderTwo's Wedding</h1>
+<a href="/Dashboard">Dashboard</a>
+<form asp-action="Logout" asp-controller="Home" method="POST">
+    <button type="submit" class="btn btn-link">Logout</button>
+</form>
+@if (Model.UserId == Context.Session.GetInt32("LoggedUserId")) 
+{
+    <a href="/edit/@Model.WeddingId">Edit</a>
+    <form asp-action="Delete" asp-controller="Home" asp-route-weddingid=@Model.WeddingId method="POST">
+    <button type="submit" class="btn btn-link">Delete</button>
+    </form>
+}
+<p>Guests</p>
+@foreach (UserWeddingRSVP u in Model.Attendees)
+{
+    <p>@u.User.FirstName @u.User.LastName</p>
+}

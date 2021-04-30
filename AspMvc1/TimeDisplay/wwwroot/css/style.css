@@ -1,0 +1,14 @@
+.container {
+    background-color: white;
+    width: 970px;
+    margin: 0px auto;
+    height: 700px;
+    text-align: center;
+}
+
+.timebox {
+    border: 5px solid black;
+    font-size: 30px;
+    width: 400px;
+    margin: 0px auto;
+}

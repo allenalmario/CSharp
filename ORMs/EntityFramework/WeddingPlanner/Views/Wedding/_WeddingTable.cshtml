@@ -1,0 +1,56 @@
+@model List<Wedding>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">Wedding</th>
+            <th scope="col">Date</th>
+            <th scope="col">Guest</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Wedding w in Model)
+        {
+            @* Check to see if user in session is in the wedding's Guest List *@
+            @* If so returns True *@
+            @* If not, returns False *@
+            bool alreadyRSVPD = w.Guests.Any(u => u.UserId == Context.Session.GetInt32("LoggedUserId"));
+            <tr>
+                <th scope="row"><a asp-action="Wedding" asp-controller="Wedding"
+                    asp-route-weddingid=@w.WeddingId>@w.WedderOne & @w.WedderTwo</a></th>
+                <td>@w.Date.ToString("MMM dd, yyyy")</td>
+                <td>@w.Guests.Count</td>
+                @if (w.UserId == Context.Session.GetInt32("LoggedUserId"))
+                {
+                    <td>
+                        <form asp-action="Delete" asp-controller="Wedding" asp-route-weddingid=@w.WeddingId>
+                            <button class="btn btn-danger" type="submit">DELETE</button>
+                        </form>
+                    </td>
+                }
+                else
+                {
+                    <td>
+                        <form asp-action="RSVP" asp-controller="Wedding" asp-route-weddingid=@w.WeddingId>
+                            <button class="btn btn-link" type="submit">
+                                @* If True, they are in the Wedding's Guest List *@
+                                @* Render Un-RSVP for the Button since they already RSVP'd *@
+                                @if (alreadyRSVPD)
+                                {
+                                    <span>Un-RSVP</span>
+                                }
+                                @* If False, they are not in the Wedding's Guest List *@
+                                @* Render RSVP for the Button since they aren't RSVP'd *@
+                                else
+                                {
+                                    <span>RSVP</span>
+                                }
+                            </button>
+                        </form>
+                    </td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>

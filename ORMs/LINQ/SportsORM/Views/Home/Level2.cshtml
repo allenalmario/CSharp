@@ -1,0 +1,36 @@
+<div class="card">
+    <div class="card-header bg-dark text-light">Level 2</div>
+    <div class="card-body">
+        <p>Using the SportsORM, complete all the following queries and show their results on Level2.cshtml.</p>
+        <ol>
+            <li>...all teams in the Atlantic Soccer Conference</li>
+            @foreach (Team t in @ViewBag.Atlantic)
+            {
+                <p>@t.Location @t.TeamName is in the @t.CurrLeague.Name</p>
+            }
+            <li>...all (current) players on the Boston Penguins (Hint: Boston is the Location, Penguins is the TeamName)</li>
+            @foreach (Player p in @ViewBag.Penguins)
+            {
+                <p>@p.FirstName @p.LastName is currently playing for the @p.CurrentTeam.Location @p.CurrentTeam.TeamName</p>
+            }
+            <li>...all (current) players in the International Collegiate Baseball Conference</li>
+            @foreach (Player p in @ViewBag.BaseballPlayers)
+            {
+                <p>@p.FirstName @p.LastName</p>
+            }
+            <li>...all (current) players in the American Conference of Amateur Football with last name "Lopez"</li>
+            @foreach (Player p in @ViewBag.LopezPlayers)
+            {
+                <p>@p.CurrentTeam.TeamName</p>
+            }
+            <li>...all football players</li>
+            @foreach (Player p in @ViewBag.FootBallPlayers)
+            {
+                <p>@p.FirstName @p.LastName</p>
+            }
+            <li>...all teams with a (current) player named "Sophia"</li>
+            <li>...all leagues with a (current) player named "Sophia"</li>
+            <li>...everyone with the last name "Flores" who DOESN'T (currently) play for the Washington Roughriders</li>
+        </ol>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/style.css"/>
+    <title>Dojo Survey Index</title>
+</head>
+<body>
+    @using DojoSurvey.Models
+    @model DojoSubmission 
+
+    <div class="container">
+        <div class="content">
+            <h3>Submitted Info</h3>
+            <div class="info">
+                <p>Name: </p>
+                <p>@Model.Name</p>
+            </div>
+            <div class="info">
+                <p>Dojo Location: </p>
+                <p>@Model.Location</p>
+            </div>
+            <div class="info">
+                <p>Language: </p>
+                <p>@Model.Language</p>
+            </div>
+            <div class="info">
+                <p>Comment: </p>
+                <p>@Model.Comment</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

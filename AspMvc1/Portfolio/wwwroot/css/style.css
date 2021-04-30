@@ -1,0 +1,37 @@
+/* General CSS */
+
+.container {
+    margin: auto;
+    padding: 5px;
+    width: 970px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.content {
+    text-align: center;
+}
+
+/* index css */
+
+#bio {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#biop {
+    width: 200px;
+}
+
+/* projects css */
+
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* contact css */

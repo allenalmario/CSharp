@@ -1,0 +1,12 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="text-center row justify-content-around">
+    <h1>Welcome to Wedding Planner!</h1>
+    <form asp-action="Logout" asp-controller="Home">
+        <button>Logout</button>
+    </form>
+</div>
+<partial name="_WeddingTable" model="Model"/>
+<a href="/New-Wedding" type="button" class="btn btn-primary">New Wedding</a>

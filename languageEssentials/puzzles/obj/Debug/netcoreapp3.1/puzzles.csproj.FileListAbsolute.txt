@@ -1,0 +1,13 @@
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\puzzles\bin\Debug\netcoreapp3.1\puzzles.exe
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\puzzles\bin\Debug\netcoreapp3.1\puzzles.deps.json
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\puzzles\bin\Debug\netcoreapp3.1\puzzles.runtimeconfig.json
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\puzzles\bin\Debug\netcoreapp3.1\puzzles.runtimeconfig.dev.json
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\puzzles\bin\Debug\netcoreapp3.1\puzzles.dll
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\puzzles\bin\Debug\netcoreapp3.1\puzzles.pdb
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\puzzles\obj\Debug\netcoreapp3.1\puzzles.csprojAssemblyReference.cache
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\puzzles\obj\Debug\netcoreapp3.1\puzzles.AssemblyInfoInputs.cache
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\puzzles\obj\Debug\netcoreapp3.1\puzzles.AssemblyInfo.cs
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\puzzles\obj\Debug\netcoreapp3.1\puzzles.csproj.CoreCompileInputs.cache
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\puzzles\obj\Debug\netcoreapp3.1\puzzles.dll
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\puzzles\obj\Debug\netcoreapp3.1\puzzles.pdb
+C:\Users\Allen\Desktop\codingDojo\cSharp\languageEssentials\puzzles\obj\Debug\netcoreapp3.1\puzzles.genruntimeconfig.cache
